@@ -29,6 +29,13 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+
+
+    .grid-cols-custom {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  
+
 @font-face {
     font-family: 'Lastica';
     src: url('/webfonts/lastica.ttf') format('truetype');
@@ -180,7 +187,7 @@ h6 {
 .btn-solid-lg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #594cda; 
     text-decoration: none;
 }
 
@@ -202,9 +209,12 @@ h6 {
 
 .btn-solid-lg.secondary:hover {
     border: 1px solid #208917;
-    background: transparent;
-    color: #208917; /* needs to stay here because of the color property of a tag */
+    background: rgba(32, 137, 23, 0.171); /* levemente translúcido */
+    color: #208917;
+    box-shadow: 0 0 8px #208917, 0 0 16px #208917;
+    transition: all 0.3s ease;
 }
+
 
 .btn-outline-reg {
     display: inline-block;
@@ -977,7 +987,7 @@ a:hover.back-to-top {
 .ex-header {
     padding-top: 8.5rem;
     padding-bottom: 4rem;
-    background-color: #f1f9fc;
+    background-color: transparent;
 }
 
 .ex-basic-1 .list-unstyled .fas {
