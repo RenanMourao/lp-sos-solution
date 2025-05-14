@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="overflow-x-hidden" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -52,105 +52,79 @@
   </head>
   <body data-spy="scroll" data-target=".fixed-top" class="bg-gradient-custom overflow-x-hidden">
     <!-- Navigation -->
-    <nav class="navbar fixed-top bg-white w-screen">
-      <div
-        class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap"
-      >
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">SOS Solution</a> -->
+    <nav class="navbar fixed-top bg-white w-full overflow-x-hidden">
+  <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between">
+    <!-- Logo -->
+    <a
+      class="flex items-center gap-2 mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
+      href="index.html"
+    >
+      <img data-aos="zoom-in" data-aos-duration="1500" src="images/logo-navbar.svg" alt="SOS Solution Logo"
+        class="w-10 h-auto max-w-full" />
+      <p id="titulo-sos" data-aos="zoom-in" data-aos-duration="1500"
+        class="font-lastica text-base text-white transition-colors duration-300 truncate max-w-[120px]">
+        sos solution
+      </p>
+    </a>
 
-        <!-- Image Logo -->
-        <a
-          class="flex justify-center items-center mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
-          href="index.html"
-        >
-          <img data-aos="zoom-in" data-aos-duration="1500" src="images/logo-navbar.svg" alt="alternative" class="w-12 min-h-10" />
-          <p id="titulo-sos" data-aos="zoom-in" data-aos-duration="1500" class="font-lastica !text-base text-white transition-colors duration-300">sos solution</p>
-        </a>
+    <!-- Botão mobile -->
+    <button
+      class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
+      type="button"
+      data-toggle="offcanvas"
+    >
+      <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
+    </button>
 
-        <button
-          class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
-          type="button"
-          data-toggle="offcanvas"
-        >
-          <span
-            class="navbar-toggler-icon inline-block w-8 h-8 align-middle"
-          ></span>
-        </button>
+    <!-- Navegação -->
+    <div
+      class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center"
+      id="navbarsExampleDefault"
+    >
+      <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+        <li>
+          <a id="link-1" class="nav-link page-scroll active" href="#header">
+            Home <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li>
+          <a id="link-2" class="text-white nav-link page-scroll text-nav" href="#quem-somos">
+            Quem Somos
+          </a>
+        </li>
+        <li>
+          <a id="link-3" class="text-white nav-link page-scroll text-nav" href="#nossos-servicos">
+            Nossos Serviços
+          </a>
+        </li>
+        <!--
+        <li>
+          <a id="link-4" class="text-white nav-link page-scroll text-nav" href="#pricing">
+            Nossos Preços
+          </a>
+        </li>
+        -->
+        <li>
+          <a id="link-5" class="text-white nav-link page-scroll text-nav"
+            href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!" target="_blank"
+            rel="noopener noreferrer">
+            Fale Conosco
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- end navbar-collapse -->
+  </div>
+  <!-- end container -->
+</nav>
 
-        <div
-          class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center"
-          id="navbarsExampleDefault"
-        >
-          <ul
-            class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row"
-          >
-            <li>
-              <a id="link-1" class="nav-link page-scroll active" href="#header"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li>
-              <a id="link-2" class="text-white nav-link page-scroll text-nav" href="#quem-somos">Quem Somos</a>
-            </li>
-            <li>
-              <a id="link-3" class="text-white nav-link page-scroll text-nav" href="#nossos-servicos">Nossos Serviços</a>
-            </li>
-            <!-- <li>
-              <a id="link-4" class="text-white nav-link page-scroll text-nav" href="#pricing">Nossos Preços</a>
-            </li> -->
-            <!-- <li class="dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown01"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Drop</a
-              >
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item page-scroll" href="article.html"
-                  >Article Details</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item page-scroll" href="terms.html"
-                  >Terms Conditions</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item page-scroll" href="privacy.html"
-                  >Privacy Policy</a
-                >
-              </div>
-            </li> -->
-            <li>
-              <a id="link-5" class="text-white nav-link page-scroll text-nav" href="#download">Fale Conosco</a>
-            </li>
-          </ul>
-          <!-- <span class="block lg:ml-3.5">
-            <a class="no-underline" href="#your-link">
-              <i
-                class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"
-              ></i>
-            </a>
-            <a class="no-underline" href="#your-link">
-              <i
-                class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"
-              ></i>
-            </a>
-          </span> -->
-        </div>
-        <!-- end of navbar-collapse -->
-      </div>
-      <!-- end of container -->
-    </nav>
     <!-- end of navbar -->
     <!-- end of navigation -->
 
     <!-- Header -->
     <header
   id="header"
-  class="h-screen w-screen flex items-center justify-center relative header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32 overflow-hidden"
+  class="h-screen w-full flex items-center justify-center relative header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32 overflow-hidden"
 >
   <!-- Vídeo de fundo -->
   <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
@@ -171,7 +145,7 @@
           Soluções Digitais Inteligentes para Potencializar o Seu Negócio
         </p>
         <!-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Seja nosso parceiro</a> -->
-        <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#your-link"><i class="fab fa-whatsapp"></i>Fale com um especialista</a>
+        <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp"></i>Fale com um especialista</a>
       </div>
       <!-- <div class="xl:text-right">
         <img class="inline" src="images/note-cell.svg" alt="alternative" />
@@ -193,7 +167,7 @@
         <p  data-aos-duration="1500" data-aos="fade-right"
         class="mb-12 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
       >VAMOS CRESCER JUNTOS?</p>
-      <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2" href="#your-link"><i class="fab fa-whatsapp"></i>SOLICITE UM ORÇAMENTO</a>
+      <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2"  href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp"></i>SOLICITE UM ORÇAMENTO</a>
     
     
       </div>
@@ -287,14 +261,20 @@
     <div id="details" class="pt-12 pb-16 lg:pt-16">
       <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
         <div class="lg:col-span-5">
-          <div class="mb-16 lg:mb-0 xl:mt-16">
-            <h2  data-aos-duration="1500" data-aos="fade-right" class="mb-6 text-white">Tecnologia inovadora orientada por resultados</h2>
-            <p  data-aos-duration="1500" data-aos="fade-right" class="mb-4 text-white">
-             Com base na ampla experiência da nossa equipe no desenvolvimento de aplicações corporativas e no feedback construtivo de clientes, alcançamos um novo patamar de faturamento.
-            </p>
-            <p  data-aos-duration="1500" data-aos="fade-right" class="mb-4 text-white">
-              Nosso prazer é ajudar pequenas e médias empresas a competir de igual para igual com grandes organizações consolidadas no mercado.
-            </p>
+          <div class="mb-16 lg:mb-0">
+            <h2  data-aos-duration="1500" data-aos="fade-right" class="mb-6 text-white">O que fazemos:</h2>
+            <ul class="list mb-7 space-y-2">
+              <li class="flex">
+                <i class="fas fa-chevron-right text-white"></i>
+                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Na SOS Tech Solution, transformamos ideias e desafios em soluções digitais sob medida. Atuamos desde a identificação das dores do cliente até a entrega da solução mais eficiente, sempre com foco em resultado e inovação.
+
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right text-white"></i>
+                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Nosso trabalho começa com um processo de escuta ativa e imersão, onde entendemos a fundo o cenário do cliente. A partir disso, co-criamos a solução ideal, validando cada etapa com transparência e estratégia. Mas não paramos por aí: também acompanhamos a evolução contínua dos projetos, garantindo que as soluções entregues cresçam junto com o negócio.</div>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- end of col -->
@@ -320,19 +300,16 @@
         <!-- end of col -->
         <div class="lg:col-span-5">
           <div class="xl:mt-12">
-            <h2  data-aos-duration="1500" data-aos="fade-left" class="mb-6 text-white">Resultados imediatos para o departamento de marketing</h2>
+            <h2  data-aos-duration="1500" data-aos="fade-left" class="mb-6 text-white">Como fazemos:</h2>
             <ul class="list mb-7 space-y-2">
               <li class="flex">
                 <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Recursos que vão ajudar você e sua equipe de marketing.</div>
+                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">adaptamos nossos serviços conforme as necessidades e objetivos de cada cliente. Nosso processo é colaborativo, ágil e focado em resultado, seja na criação de um site, gestão de tráfego pago, desenvolvimento de aplicativos ou implantação de sistemas personalizados.
+                </div>
               </li>
               <li class="flex">
                 <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Curva de aprendizado suave graças à base de conhecimento.</div>
-              </li>
-              <li class="flex">
-                <i class="fas fa-chevron-right"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Pronto para uso imediato com configurações mínimas.</div>
+                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Cada projeto é tratado como único, com estratégia, clareza e comprometimento. Afinal, nosso papel é ser o braço tecnológico que transforma o presente e impulsiona o futuro do seu negócio.</div>
               </li>
             </ul>
             <!-- <a
@@ -598,7 +575,7 @@
             </a>
           </span> -->
           <span class="fa-stack">
-            <a href="#your-link">
+            <a href="https://www.instagram.com/sossolutiontech/">
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fab fa-instagram fa-stack-1x"></i>
             </a>
@@ -652,5 +629,10 @@
     <script>
       AOS.init();
     </script>
+    <!-- <style>
+  * {
+    outline: 1px solid red;
+  }
+</style> -->
   </body>
 </html>
