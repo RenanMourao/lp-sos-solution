@@ -53,7 +53,7 @@
   <body data-spy="scroll" data-target=".fixed-top" class="bg-gradient-custom overflow-x-hidden">
     <!-- Navigation -->
     <nav class="navbar fixed-top bg-white w-full overflow-x-hidden">
-  <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between">
+  <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-center lg:justify-between">
     <!-- Logo -->
     <a
       class="flex items-center gap-2 mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
@@ -62,19 +62,70 @@
       <img data-aos="zoom-in" data-aos-duration="1500" src="images/logo-navbar.svg" alt="SOS Solution Logo"
         class="w-10 h-auto max-w-full" />
       <p id="titulo-sos" data-aos="zoom-in" data-aos-duration="1500"
-        class="font-lastica text-base text-white transition-colors duration-300 truncate max-w-[120px]">
+        class="titulo-sos font-lastica text-base text-white transition-colors duration-300 truncate max-w-[120px]">
         sos solution
       </p>
     </a>
 
     <!-- Botão mobile -->
-    <button
-      class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
-      type="button"
-      data-toggle="offcanvas"
-    >
-      <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
-    </button>
+  <style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #508AE2, #736FD5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 50;
+    box-shadow:
+      0 0 6px #508AE2,
+      0 0 10px #736FD5,
+      0 0 14px #508AE2;
+    animation: neon-pulse 1.6s infinite alternate;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes neon-pulse {
+    0% {
+      box-shadow:
+        0 0 4px #508AE2,
+        0 0 8px #736FD5,
+        0 0 12px #508AE2;
+    }
+    100% {
+      box-shadow:
+        0 0 8px #508AE2,
+        0 0 12px #736FD5,
+        0 0 16px #508AE2;
+    }
+  }
+</style>
+
+<a
+  href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"
+  class="whatsapp-float"
+  title="Fale com um especialista no WhatsApp"
+>
+  <i class="fab fa-whatsapp text-xl"></i>
+</a>
+
+
+
+
+
+
+
+
+
 
     <!-- Navegação -->
     <div
@@ -127,10 +178,12 @@
   class="h-screen w-full flex items-center justify-center relative header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32 overflow-hidden"
 >
   <!-- Vídeo de fundo -->
-  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="images/video-banner-3.mp4" type="video/mp4" />
-    Seu navegador não suporta vídeo HTML5.
-  </video>
+ <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+  <source src="https://res.cloudinary.com/dozeklvbl/video/upload/v1649795685/lffstl4ecnemgaqxpwqy.mp4" type="video/mp4" />
+  Seu navegador não suporta vídeo HTML5.
+</video>
+
+
 
   <!-- Camada com gradiente -->
   <div class="gradient-overlay"></div>
@@ -138,14 +191,22 @@
   <!-- Conteúdo principal -->
   <div class="relative z-10">
     <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
-      <div class="mb-16 lg:mt-32 xl:mt-40">
-        <h1 data-aos="zoom-in" data-aos-duration="1500" id="titulo-sos" class="font-lastica text-5xl text-white mb-4">sos solution</h1>
-        <h2 data-aos="zoom-in" data-aos-duration="1500" id="titulo-sos" class="tech font-lastica text-4xl mb-8">tech</h2>
+      <div class="mb-16 lg:mt-32 xl:mt-40">  
+        <h1 class="titulo-sos font-lastica text-4xl sm:text-5xl text-white mb-4">
+  <span class="block sm:inline">sos</span> <span class="block sm:inline">solution</span>
+</h1>
+<h2 class="titulo-sos tech font-lastica text-3xl sm:text-4xl mb-8">tech</h2>
+
+
+
+
+
         <p data-aos="zoom-in" data-aos-duration="1500" class="p-large mb-8 text-white">
           Soluções Digitais Inteligentes para Potencializar o Seu Negócio
         </p>
         <!-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Seja nosso parceiro</a> -->
-        <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp"></i>Fale com um especialista</a>
+        <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp hidden sm:inline"></i>
+Fale com um especialista</a>
       </div>
       <!-- <div class="xl:text-right">
         <img class="inline" src="images/note-cell.svg" alt="alternative" />
@@ -167,7 +228,8 @@
         <p  data-aos-duration="1500" data-aos="fade-right"
         class="mb-12 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
       >VAMOS CRESCER JUNTOS?</p>
-      <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2"  href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp"></i>SOLICITE UM ORÇAMENTO</a>
+      <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2"  href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp hidden sm:inline"></i>
+SOLICITE UM ORÇAMENTO</a>
     
     
       </div>
@@ -280,7 +342,7 @@
         <!-- end of col -->
         <div class="lg:col-span-7">
           <div  data-aos-duration="1500" data-aos="fade-up" class="xl:ml-14">
-            <img class="inline" src="images/details-1.png" alt="alternative" />
+            <img class="inline" src="images/details-1.webp" alt="alternative" />
           </div>
         </div>
         <!-- end of col -->
@@ -294,7 +356,7 @@
       <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
         <div class="lg:col-span-7">
           <div  data-aos-duration="1500" data-aos="fade-up" class="mb-12 lg:mb-0 xl:mr-14">
-            <img class="inline" src="images/details-2.png" alt="alternative" />
+            <img class="inline" src="images/details-2.webp" alt="alternative" />
           </div>
         </div>
         <!-- end of col -->
@@ -599,18 +661,21 @@
 
     <!-- Copyright -->
     <div class="copyright">
-      <div class="container px-4 sm:px-8 grid grid-cols-custom">
-        <ul class="mb-4 list-unstyled p-small">
+  <div class="container px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+    
+    <ul class="mb-4 list-unstyled p-small">
+      <li class="mb-2 text-white">
+        <a href="privacy.html">POLÍTICA DE PRIVACIDADE</a>
+      </li>
+    </ul>
 
-          <li class="mb-2 text-white"><a href="privacy.html">POLÍTICA DE PRIVACIDADE</a></li>
-        </ul>
-        <p class="pb-2 p-small text-white statement">
-          © 2025 CRIADO POR SOS SOLUTION TECH. TODOS OS DIREITOS RESERVADOS.
-        </p>
-      </div>
+    <p class="pb-2 p-small text-white statement col-span-2 sm:col-span-2">
+      © 2025 CRIADO POR SOS SOLUTION TECH. TODOS OS DIREITOS RESERVADOS.
+    </p>
 
-      <!-- end of container -->
-    </div>
+  </div>
+</div>
+
     <!-- end of copyright -->
     <!-- end of copyright -->
 

@@ -1,26 +1,29 @@
-/* Template: Pavo Mobile App Website Tailwind CSS HTML Template
-   Description: Custom JS file
-*/
-
-
 function toggleTituloCorAoScroll() {
     const titulo = document.getElementById('titulo-sos');
     if (!titulo) return;
 
-    if (window.scrollY > 10) {
-      titulo.classList.remove('text-white');
-      titulo.classList.add('text-black');
+    // Verifica se a largura da tela é menor que 640px (tela de celular)
+    if (window.innerWidth <= 640) {
+        titulo.classList.remove('text-white'); // Título fica preto em dispositivos móveis
+        titulo.classList.add('text-black');
     } else {
-      titulo.classList.remove('text-black');
-      titulo.classList.add('text-white');
+        // Se a tela for maior que 640px (desktop), continua o comportamento do scroll
+        if (window.scrollY > 10) {
+            titulo.classList.remove('text-white');
+            titulo.classList.add('text-black');
+        } else {
+            titulo.classList.remove('text-black');
+            titulo.classList.add('text-white');
+        }
     }
-  }
+}
 
-  // Executa a função toda vez que houver scroll
-  window.addEventListener('scroll', toggleTituloCorAoScroll);
+// Executa a função toda vez que houver scroll
+window.addEventListener('scroll', toggleTituloCorAoScroll);
 
-  // Também executa uma vez ao carregar a página (caso já esteja rolada)
-  window.addEventListener('load', toggleTituloCorAoScroll);
+// Também executa uma vez ao carregar a página (caso já esteja rolada)
+window.addEventListener('load', toggleTituloCorAoScroll);
+
 
   function toggleTextNavScroll() {
     const titulos = document.querySelectorAll('.text-nav');
@@ -213,24 +216,29 @@ function toggleTituloCorAoScroll() {
 		changeActive();
 	});
 	
-	/* Function to change the active link */
-	function changeActive() {
-		const menuItems = getMenuItems();
-		$.each(menuItems, function(index, value){
-			var section = $('#' + value);
-			if (section.length) {
-				var offsetSection = section.offset().top;
-				var docScroll = $(document).scrollTop();
-				var docScroll1 = docScroll + 1; 
-	
-				if (docScroll1 >= offsetSection) {
-					$('.nav-link').removeClass('active');
-					$('.nav-link[href$="#'+value+'"]').addClass('active');
-				}
-			}
-		});
-	}
-	
+function changeActive() {
+    // Verifica a largura da tela (exemplo: maior que 768px para dispositivos maiores)
+    if ($(window).width() > 768) {
+        const menuItems = getMenuItems();
+        $.each(menuItems, function(index, value) {
+            var section = $('#' + value);
+            if (section.length) {
+                var offsetSection = section.offset().top;
+                var docScroll = $(document).scrollTop();
+                var docScroll1 = docScroll + 1;
+
+                if (docScroll1 >= offsetSection) {
+                    // Remover a classe 'active' apenas dos links de navegação
+                    $('.nav-link').not('.whatsapp-link').removeClass('active');
+                    // Adicionar a classe 'active' no link da seção correspondente
+                    $('.nav-link[href$="#'+value+'"]').addClass('active');
+                }
+            }
+        });
+    }
+}
+
+
 
 })(jQuery);
 

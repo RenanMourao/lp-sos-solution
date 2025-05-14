@@ -1,4 +1,3 @@
-// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -7,6 +6,10 @@ module.exports = {
       fontFamily: {
         lastica: ['Lastica', 'sans-serif'],
       },
+      // Se quiser adicionar um breakpoint extra (ex: xs: 320px), pode fazer aqui:
+      // screens: {
+      //   'xs': '320px',
+      // },
     },
   },
   plugins: [],
