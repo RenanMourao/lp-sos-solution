@@ -29,12 +29,32 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+.bg-service {
+ background: radial-gradient(circle,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(2, 49, 59, 1) 250%);
+}
+
+.bg-swiper {
+   background: linear-gradient(360deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 0) 100%);
+}
 
 
     .grid-cols-custom {
       grid-template-columns: 1fr 2fr 1fr;
     }
-  
+
+    .comeia {
+        z-index: -1;
+    }
+    .neon-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+}
+
 
 @font-face {
     font-family: 'Lastica';
@@ -58,14 +78,14 @@ Colors:
   }
 
  .gradient-overlay {
-    background: linear-gradient(50deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(66, 66, 66, 1) 95%);
+    background: linear-gradient(50deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgb(0, 0, 0) 95%);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.90; /* você pode ajustar a opacidade se quiser */
+    opacity: 0.75; /* você pode ajustar a opacidade se quiser */
   }
   
 
@@ -543,7 +563,7 @@ input[type="checkbox"] {
 .dropdown.show > a,
 .nav-link:hover,
 .nav-link.active {
-    color: #974ec9;
+    color: #5b88d7;
     text-decoration: none;
 }
 
@@ -799,7 +819,6 @@ input[type="checkbox"] {
 
 .slider-1 .testimonial-author {
     margin-bottom: 0;
-    color: #252c38;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -917,8 +936,7 @@ input[type="checkbox"] {
 /******************/
 .footer {
     padding-top: 6rem;
-    padding-bottom: 3rem;
-    background: linear-gradient(rgba(255, 255, 255, 1), rgb(0, 0, 0));
+    background: black;
     text-align: center;
 }
 
@@ -935,7 +953,13 @@ input[type="checkbox"] {
 
 .footer .fa-stack .fa-stack-1x {
     color: #252c38;
-    transition: all 0.2s ease;
+    border-radius: 30px;
+    box-shadow:
+      0 0 6px #508AE2,
+      0 0 10px #736FD5,
+      0 0 14px #508AE2;
+    animation: neon-pulse 1.6s infinite alternate;
+    transition: transform 0.3s ease;
 }
 
 .footer .fa-stack .fa-stack-2x {
@@ -966,19 +990,25 @@ input[type="checkbox"] {
 a.back-to-top {
     position: fixed;
     z-index: 999;
-    left: 12px;
-    bottom: 12px;
+    left: 3rem;
+    bottom: 4rem;
     display: none;
-    width: 42px;
-    height: 42px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 30px;
     background: #343e48 url("../images/up-arrow.png") no-repeat center 47%;
     background-size: 18px 18px;
     text-indent: -9999px;
+    box-shadow:
+      0 0 6px #508AE2,
+      0 0 10px #736FD5,
+      0 0 14px #508AE2;
+    animation: neon-pulse 1.6s infinite alternate;
+    transition: transform 0.3s ease;
 }
 
 a:hover.back-to-top {
-    background-color: #000000;
+    background-color: #508AE2;
 }
 
 /***********************/
@@ -1062,7 +1092,7 @@ a:hover.back-to-top {
     .navbar.top-nav-collapse {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        background-color: #f1f9fc;
+        background-color: #ffffff;
     }
 
     .offcanvas-collapse {

@@ -50,7 +50,19 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png" />
   </head>
-  <body data-spy="scroll" data-target=".fixed-top" class="bg-gradient-custom overflow-x-hidden">
+  <body data-spy="scroll" data-target=".fixed-top" class="bg-gradient-custon overflow-x-hidden">
+    <canvas class="neon-glow"></canvas>
+<img
+  src="/images/comeia.webp"
+  alt=""
+  class="comeia fixed top-0 left-0 w-screen h-screen object-cover pointer-events-none !-z-10"
+/>
+
+
+
+
+
+
     <!-- Navigation -->
     <nav class="navbar fixed-top bg-white w-full overflow-x-hidden">
   <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-center lg:justify-between">
@@ -65,16 +77,20 @@
         class="titulo-sos font-lastica text-base text-white transition-colors duration-300 truncate max-w-[120px]">
         sos solution
       </p>
+      <p data-aos="zoom-in" data-aos-duration="1500"
+        class="tech titulo-sos font-lastica text-base !text-[#5b88d7] transition-colors duration-300 truncate max-w-[120px]">
+        Tech
+      </p>
     </a>
 
     <!-- Botão mobile -->
   <style>
   .whatsapp-float {
     position: fixed;
-    bottom: 12px;
-    right: 12px;
-    width: 2.5rem;
-    height: 2.5rem;
+    bottom: 4rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
     background: linear-gradient(135deg, #508AE2, #736FD5);
     color: white;
     display: flex;
@@ -115,7 +131,7 @@
   class="whatsapp-float"
   title="Fale com um especialista no WhatsApp"
 >
-  <i class="fab fa-whatsapp text-xl"></i>
+  <i class="fab fa-whatsapp text-6xl"></i>
 </a>
 
 
@@ -202,7 +218,7 @@
 
 
         <p data-aos="zoom-in" data-aos-duration="1500" class="p-large mb-8 text-white">
-          Soluções Digitais Inteligentes para Potencializar o Seu Negócio
+          Soluções digitais inteligentes para potencializar o seu negócio
         </p>
         <!-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Seja nosso parceiro</a> -->
         <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp hidden sm:inline"></i>
@@ -219,20 +235,30 @@ Fale com um especialista</a>
     <!-- end of header -->
 
     <!-- Introduction -->
-    <div id="quem-somos" class="pt-14 pb-14 text-center ">
-      <div class="container px-4 sm:px-8 xl:px-4">
-        <p  data-aos-duration="1500" data-aos="fade-left"
-          class="mb-4 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
-        >
-        A SOS Solution Tech nasceu com um propósito claro: ajudar empresas a fortalecer sua presença online e impulsionar seus resultados. Combinamos tecnologia, estratégia e criatividade para desenvolver soluções digitais sob medida, que otimizam processos, melhoram a comunicação e ampliam a visibilidade das marcas no ambiente digital.    </p>
-        <p  data-aos-duration="1500" data-aos="fade-right"
-        class="mb-12 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
-      >VAMOS CRESCER JUNTOS?</p>
-      <a class="btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2"  href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!"><i class="fab fa-whatsapp hidden sm:inline"></i>
-SOLICITE UM ORÇAMENTO</a>
-    
-    
-      </div>
+   
+
+ <div id="quem-somos" class="pt-40 text-center relative overflow-hidden">
+  <!-- Gradiente preto cobrindo metade do conteúdo -->
+  <div class="absolute top-0 left-0 w-full h-1/2 z-10 pointer-events-none bg-gradient-to-b from-black via-black/60 to-transparent"></div>
+
+  <div data-aos="fade-in" class="items-center container px-4 sm:px-8 xl:px-4 z-20 bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-12 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+    <p data-aos-duration="1500" data-aos="fade-in"
+       class="mb-4 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto">
+      A SOS Solution Tech nasceu com um propósito claro: ajudar empresas a fortalecer sua presença online e impulsionar seus resultados. Combinamos tecnologia, estratégia e criatividade para desenvolver soluções digitais sob medida, que otimizam processos, melhoram a comunicação e ampliam a visibilidade das marcas no ambiente digital.
+    </p>
+    <p data-aos-duration="1500" data-aos="fade-in"
+       class="mb-12 text-white text-3xl leading-10 lg:max-w-5xl lg:mx-auto">
+      VAMOS CRESCER JUNTOS?
+    </p>
+    <a data-aos="fade-in" class="w-max btn-solid-lg secondary text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2"
+       href="https://wa.me/5511914601095?text=Quero%20falar%20com%20um%20especialista!">
+      <i class="fab fa-whatsapp hidden sm:inline"></i>
+      SOLICITE UM ORÇAMENTO
+    </a>
+  </div>
+</div>
+
+
       <!-- end of container -->
     </div>
     <!-- end of introduction -->
@@ -241,12 +267,12 @@ SOLICITE UM ORÇAMENTO</a>
 <!-- Features -->
 
 <!-- Seção de Serviços com Estilo Moderno -->
-<div id="nossos-servicos" class="pb-16 text-white">
+<div id="nossos-servicos" class="pb-16 pt-40 text-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Card 1 -->
-      <div  data-aos-duration="1500" data-aos="fade-left" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="fade-left" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <!-- Gradiente Neon Azul Topo -->
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
 
@@ -254,14 +280,14 @@ SOLICITE UM ORÇAMENTO</a>
         <img src="images/site.png" alt="Web Sites" class="w-14 h-14 mb-4 animate-pulse z-20" />
 
         <!-- Conteúdo -->
-        <h5 class="font-semibold text-xl mb-2 text-white">Criação de Web Sites e Landing Pages</h5>
+        <h5 class="font-semibold text-xl mb-2 text-white">Criação de Web Sites, Landing Pages e SEO Profissional</h5>
         <p class="text-gray-300 flex-grow">
-          Sites institucionais e landing pages com identidade própria, otimizados para atrair e converter clientes.
+          Desenvolvemos sites institucionais e landing pages com identidade visual única e estratégias de SEO integradas. Projetos otimizados para atrair, engajar e converter mais clientes para o seu negócio.
         </p>
       </div>
 
       <!-- Card 2 -->
-      <div  data-aos-duration="1500" data-aos="zoom-in" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="zoom-in" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
         <img src="images/loja.png" alt="E-commerce" class="w-14 h-14 mb-4 animate-pulse z-20" />
         <h5 class="font-semibold text-xl mb-2 text-white">E-commerce Personalizado</h5>
@@ -271,7 +297,7 @@ SOLICITE UM ORÇAMENTO</a>
       </div>
 
       <!-- Card 3 -->
-      <div  data-aos-duration="1500" data-aos="fade-right" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="fade-right" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
         <img src="images/aplicativo.png" alt="Aplicativos" class="w-14 h-14 mb-4 animate-pulse z-20" />
         <h5 class="font-semibold text-xl mb-2 text-white">Desenvolvimento de Aplicativos</h5>
@@ -281,7 +307,7 @@ SOLICITE UM ORÇAMENTO</a>
       </div>
 
       <!-- Card 4 -->
-      <div  data-aos-duration="1500" data-aos="fade-left" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="fade-left" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
         <img src="images/sistema.png" alt="ERPs e CRMs" class="w-14 h-14 mb-4 animate-pulse z-20" />
         <h5 class="font-semibold text-xl mb-2 text-white">Implantação de Sistemas (ERPs e CRMs)</h5>
@@ -291,7 +317,7 @@ SOLICITE UM ORÇAMENTO</a>
       </div>
 
       <!-- Card 5 -->
-      <div  data-aos-duration="1500" data-aos="zoom-in" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="zoom-in" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
         <img src="images/social.png" alt="Mídia Digital" class="w-14 h-14 mb-4 animate-pulse z-20" />
         <h5 class="font-semibold text-xl mb-2 text-white">Criação de Mídia Digital</h5>
@@ -301,7 +327,7 @@ SOLICITE UM ORÇAMENTO</a>
       </div>
 
       <!-- Card 6 -->
-      <div  data-aos-duration="1500" data-aos="fade-right" class="cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div  data-aos-duration="1500" data-aos="fade-right" class="bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
         <div class="absolute top-0 left-1 w-[calc(100%-0.5rem)] h-[6px] mx-auto rounded-t-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-pulse z-10"></div>
         <img src="images/trafego.png" alt="Tráfego Pago" class="w-14 h-14 mb-4 animate-pulse z-20" />
         <h5 class="font-semibold text-xl mb-2 text-white">Gestão de Tráfego Pago</h5>
@@ -320,31 +346,37 @@ SOLICITE UM ORÇAMENTO</a>
 
 
     <!-- Details 1 -->
-    <div id="details" class="pt-12 pb-16 lg:pt-16">
+    <div data-aos="fade-in" id="details" class="pt-12 pb-16 lg:pt-16">
       <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-        <div class="lg:col-span-5">
+        <div class="lg:col-span-5 bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
           <div class="mb-16 lg:mb-0">
-            <h2  data-aos-duration="1500" data-aos="fade-right" class="mb-6 text-white">O que fazemos:</h2>
+            <h2  data-aos-duration="1500" data-aos="fade-in" class="mb-6 text-white">O que fazemos:</h2>
             <ul class="list mb-7 space-y-2">
               <li class="flex">
                 <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Na SOS Tech Solution, transformamos ideias e desafios em soluções digitais sob medida. Atuamos desde a identificação das dores do cliente até a entrega da solução mais eficiente, sempre com foco em resultado e inovação.
-
+                <div  data-aos-duration="1500" data-aos="fade-in" class="text-white">Na SOS Tech Solution, transformamos ideias e desafios em soluções digitais sob medida. 
                 </div>
               </li>
               <li class="flex">
                 <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Nosso trabalho começa com um processo de escuta ativa e imersão, onde entendemos a fundo o cenário do cliente. A partir disso, co-criamos a solução ideal, validando cada etapa com transparência e estratégia. Mas não paramos por aí: também acompanhamos a evolução contínua dos projetos, garantindo que as soluções entregues cresçam junto com o negócio.</div>
+                <div  data-aos-duration="1500" data-aos="fade-in" class="text-white">
+                  Atuamos desde a identificação das dores do cliente até a entrega da solução mais eficiente, sempre com foco em resultado e inovação.
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right text-white"></i>
+                <div  data-aos-duration="1500" data-aos="fade-in" class="text-white">Nosso trabalho começa com um processo de escuta ativa e imersão, onde entendemos a fundo o cenário do cliente. A partir disso, co-criamos a solução ideal, validando cada etapa com transparência e estratégia. Mas não paramos por aí: também acompanhamos a evolução contínua dos projetos, garantindo que as soluções entregues cresçam junto com <br> o negócio.</div>
               </li>
             </ul>
           </div>
         </div>
         <!-- end of col -->
         <div class="lg:col-span-7">
-          <div  data-aos-duration="1500" data-aos="fade-up" class="xl:ml-14">
-            <img class="inline" src="images/details-1.webp" alt="alternative" />
-          </div>
-        </div>
+  <div data-aos-duration="1500" data-aos="fade-up" class="xl:ml-14 h-full flex items-stretch">
+    <img class="inline h-full w-full object-cover rounded-2xl" src="images/details-1.webp" alt="alternative" />
+  </div>
+</div>
+
         <!-- end of col -->
       </div>
       <!-- end of container -->
@@ -352,41 +384,44 @@ SOLICITE UM ORÇAMENTO</a>
     <!-- end of details 1 -->
 
     <!-- Details 2 -->
-    <div class="py-24">
-      <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-        <div class="lg:col-span-7">
-          <div  data-aos-duration="1500" data-aos="fade-up" class="mb-12 lg:mb-0 xl:mr-14">
-            <img class="inline" src="images/details-2.webp" alt="alternative" />
-          </div>
-        </div>
-        <!-- end of col -->
-        <div class="lg:col-span-5">
-          <div class="xl:mt-12">
-            <h2  data-aos-duration="1500" data-aos="fade-left" class="mb-6 text-white">Como fazemos:</h2>
-            <ul class="list mb-7 space-y-2">
-              <li class="flex">
-                <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">adaptamos nossos serviços conforme as necessidades e objetivos de cada cliente. Nosso processo é colaborativo, ágil e focado em resultado, seja na criação de um site, gestão de tráfego pago, desenvolvimento de aplicativos ou implantação de sistemas personalizados.
-                </div>
-              </li>
-              <li class="flex">
-                <i class="fas fa-chevron-right text-white"></i>
-                <div  data-aos-duration="1500" data-aos="fade-up" class="text-white">Cada projeto é tratado como único, com estratégia, clareza e comprometimento. Afinal, nosso papel é ser o braço tecnológico que transforma o presente e impulsiona o futuro do seu negócio.</div>
-              </li>
-            </ul>
-            <!-- <a
-              class="btn-solid-reg popup-with-move-anim mr-1.5"
-              href="#details-lightbox"
-              >Lightbox</a
-            >
-            <a class="btn-outline-reg text-white" href="article.html">Details</a> -->
-          </div>
-        </div>
-        <!-- end of col -->
+    <div data-aos="fade-in" id="details" class="pt-12 pb-16 lg:pt-16">
+  <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+    
+    <!-- Imagem com altura igual ao card -->
+    <div class="lg:col-span-7 w-full h-full flex items-stretch">
+      <div data-aos-duration="1500" data-aos="fade-up" class="xl:mr-14 w-full h-full">
+        <img class="inline h-full w-full object-cover rounded-2xl" src="images/details-2.webp" alt="alternative" />
       </div>
-      <!-- end of container -->
     </div>
-    <!-- end of details 2 -->
+
+    <!-- Card de texto -->
+    <div class="lg:col-span-5 bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
+      <div class="mb-16 lg:mb-0">
+        <h2 data-aos-duration="1500" data-aos="fade-in" class="mb-6 text-white">Como fazemos:</h2>
+        <ul class="list mb-7 space-y-2">
+          <li class="flex">
+            <i class="fas fa-chevron-right text-white"></i>
+            <div data-aos-duration="1500" data-aos="fade-in" class="text-white">
+              Adaptamos nossos serviços conforme as necessidades e objetivos de cada cliente. Nosso processo é colaborativo, ágil e focado em resultado, seja na criação de um site, gestão de tráfego pago, desenvolvimento de aplicativos ou implantação de sistemas personalizados. 
+            </div>
+          </li>
+          <li class="flex">
+            <i class="fas fa-chevron-right text-white"></i>
+            <div data-aos-duration="1500" data-aos="fade-in" class="text-white">
+              Cada projeto é tratado como único, com estratégia, clareza e comprometimento. Afinal, nosso papel é ser o braço tecnológico que transforma o presente e impulsiona o futuro do seu negócio.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- end of details 1 -->
+
+    <!-- Details 2 -->
+    
 
     <!-- Details Lightbox -->
     <!-- Lightbox -->
@@ -416,7 +451,7 @@ SOLICITE UM ORÇAMENTO</a>
     <!-- Details 3 -->
     <div class="pt-16 pb-12">
       <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-        <!-- <div class="lg:col-span-5">
+        <!-- <div class="lg:col-span-5 bg-service cursor-pointer group relative flex flex-col h-full bg-gradient-to-b from-white/10 to-white/5 border border-white/10 backdrop-blur-md shadow-lg rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(0,191,255,0.5)] hover:border-white/30 overflow-hidden">
           <div class="mb-16 lg:mb-0 xl:mt-16">
             <h2 class="mb-6 text-white">
               Platform integration and life time free updates
@@ -445,9 +480,9 @@ SOLICITE UM ORÇAMENTO</a>
     <!-- end of details 3 -->
 
     <!-- Statistics -->
-    <div class="counter">
+    <!-- <div class="counter">
       <div class="container px-4 sm:px-8">
-        <!-- Counter -->
+       
         <div id="counter">
           <div  data-aos-duration="1500" data-aos="fade-up" class="cell">
             <div class="counter-value number-count text-white" data-count="231">1</div>
@@ -471,114 +506,114 @@ SOLICITE UM ORÇAMENTO</a>
             </p>
           </div>
         </div>
-        <!-- end of counter -->
+       
       </div>
-      <!-- end of container -->
-    </div>
+     
+    </div> -->
     <!-- end of counter -->
     <!-- end of statistics -->
 
     <!-- Testimonials -->
-    <div class="slider-1 py-32 bg-gray">
-      <div class="container px-4 sm:px-8">
-        <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">
-          Veja o que os clientes dizem sobre a experiência com a SOS Solution
-        </h2>
+    <!-- Seção de Depoimentos com fundo preto e setas neon -->
+<div class="slider-1 py-32 bg-swiper relative overflow-hidden">
+  <!-- Gradiente no topo -->
+  <div class="absolute top-0 left-0 w-full h-32 z-10 pointer-events-none"></div>
 
-        <!-- Card Slider -->
-        <div class="slider-container">
-          <div class="swiper-container card-slider">
-            <div class="swiper-wrapper">
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div data-aos-duration="1500" data-aos="fade-up" class="card">
-            
-                  <div class="card-body">
-                    <p class="italic mb-3">
-                      "CONTRATAR A SOS SOLUTION TECH FOI A MELHOR DECISÃO PARA O CRESCIMENTO DA
-                      NOSSA EMPRESA NO DIGITAL. ELES CRIARAM UM SITE INCRÍVEL, MODERNO E FUNCIONAL.
-                      ALÉM DISSO, O SUPORTE E A ATENÇÃO COM O NOSSO PROJETO FIZERAM TODA A
-                      DIFERENÇA." 
-                    </p>
-                    <p class="testimonial-author">— ALEX - NETMUND</p>
-                  </div>
-                </div>
+  <div class="container px-4 sm:px-8 relative z-20">
+    <h2 class="text-white mb-12 text-center lg:max-w-xl lg:mx-auto">
+      Veja o que os clientes dizem sobre a experiência com a SOS Solution
+    </h2>
+
+    <!-- Card Slider -->
+    <div class="slider-container">
+      <div class="swiper-container card-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div data-aos-duration="1500" data-aos="fade-up" class="card">
+              <div class="card-body bg-swiper-2">
+                <p class="italic mb-3 text-white">
+                  "CONTRATAR A SOS SOLUTION TECH FOI A MELHOR DECISÃO PARA O CRESCIMENTO DA
+                  NOSSA EMPRESA NO DIGITAL. ELES CRIARAM UM SITE INCRÍVEL, MODERNO E FUNCIONAL.
+                  ALÉM DISSO, O SUPORTE E A ATENÇÃO COM O NOSSO PROJETO FIZERAM TODA A
+                  DIFERENÇA." 
+                </p>
+                <p class="testimonial-author text-white">NETMUND</p>
               </div>
-              <!-- end of swiper-slide -->
-              <!-- end of slide -->
-
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div data-aos-duration="1500" data-aos="fade-up" class="card">
-                  
-                  <div class="card-body">
-                    <p class="italic mb-3">
-                      "A EQUIPE É SUPER COMPETENTE E ATENCIOSA! FIZEMOS A IMPLANTAÇÃO DO NOSSO
-                      SISTEMA COM ELES E HOJE CONSEGUIMOS CONTROLAR TUDO COM MUITO MAIS
-                      AGILIDADE E ORGANIZAÇÃO. PROFISSIONALISMO DO INÍCIO AO FIM." 
-                    </p>
-                    <p class="testimonial-author">— LAURA - LD BEAUTY CONCEPT</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of swiper-slide -->
-              <!-- end of slide -->
-
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div data-aos-duration="1500" data-aos="fade-up" class="card">
-                  
-                  <div class="card-body">
-                    <p class="italic mb-3">
-                      "COMEÇAMOS COM UMA LOJA VIRTUAL E HOJE TEMOS TAMBÉM CAMPANHAS RODANDO
-                      NAS REDES SOCIAIS, TODAS GERENCIADAS PELA SOS SOLUTION. O RESULTADO FOI UM
-                      AUMENTO REAL NAS VENDAS E MAIS VISIBILIDADE DA MARCA. RECOMENDO DE OLHOS
-                      FECHADOS!"
-                    </p>
-                    <p class="testimonial-author">— TANIA - GR LACRES</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of swiper-slide -->
-              <!-- end of slide -->
-
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div data-aos-duration="1500" data-aos="fade-up" class="card">
-                  
-                  <div class="card-body">
-                    <p class="italic mb-3">
-                      SUA EXPERIÊNCIA TAMBÉM IMPORTA!
-                      JÁ TEVE UM PROJETO COM A GENTE?
-                      COMPARTILHE SEU DEPOIMENTO E AJUDE
-                      OUTRAS EMPRESAS A DAREM O PRÓXIMO PASSO
-                      COM CONFIANÇA.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of swiper-slide -->
-              <!-- end of slide -->
-
-              <!-- Slide -->
-              
             </div>
-            <!-- end of swiper-wrapper -->
-
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- end of add arrows -->
           </div>
-          <!-- end of swiper-container -->
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div data-aos-duration="1500" data-aos="fade-up" class="card">
+              <div class="card-body bg-swiper-2">
+                <p class="italic mb-3 text-white">
+                  "A EQUIPE É SUPER COMPETENTE E ATENCIOSA! FIZEMOS A IMPLANTAÇÃO DO NOSSO
+                  SISTEMA COM ELES E HOJE CONSEGUIMOS CONTROLAR TUDO COM MUITO MAIS
+                  AGILIDADE E ORGANIZAÇÃO. PROFISSIONALISMO DO INÍCIO AO FIM." 
+                </p>
+                <p class="testimonial-author text-white">LD BEAUTY CONCEPT</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div data-aos-duration="1500" data-aos="fade-up" class="card">
+              <div class="card-body bg-swiper-2">
+                <p class="italic mb-3 text-white">
+                  "COMEÇAMOS COM UMA LOJA VIRTUAL E HOJE TEMOS TAMBÉM CAMPANHAS RODANDO
+                  NAS REDES SOCIAIS, TODAS GERENCIADAS PELA SOS SOLUTION. O RESULTADO FOI UM
+                  AUMENTO REAL NAS VENDAS E MAIS VISIBILIDADE DA MARCA. RECOMENDO DE OLHOS
+                  FECHADOS!"
+                </p>
+                <p class="testimonial-author text-white">GR LACRES</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div data-aos-duration="1500" data-aos="fade-up" class="card">
+              <div class="card-body bg-swiper-2">
+                <p class="italic mb-3 text-white">
+                  SUA EXPERIÊNCIA TAMBÉM IMPORTA!<br>
+                  JÁ TEVE UM PROJETO COM A GENTE?<br>
+                  COMPARTILHE SEU DEPOIMENTO E AJUDE
+                  OUTRAS EMPRESAS A DAREM O PRÓXIMO PASSO
+                  COM CONFIANÇA.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- end of slider-container -->
-        <!-- end of card slider -->
+
+        <!-- Neon Arrows -->
+        <div class="swiper-button-next neon-arrow"></div>
+        <div class="swiper-button-prev neon-arrow"></div>
       </div>
-      <!-- end of container -->
     </div>
-    <!-- end of slider-1 -->
-    <!-- end of testimonials -->
+  </div>
+</div>
+
+<!-- Neon Arrows Custom Style -->
+<style>
+  .neon-arrow {
+    color: #0ff;
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+    filter: drop-shadow(0 0 10px #0ff);
+    transition: transform 0.2s ease;
+  }
+
+  .neon-arrow:hover {
+    transform: scale(1.2);
+  }
+</style>
+
 
   
 
@@ -614,7 +649,7 @@ SOLICITE UM ORÇAMENTO</a>
           <a
             class="text-indigo-600 hover:text-gray-500"
             href="mailto:atendimento@sossolution.com.br"
-            > atendimento@sossolution.com.br</a
+            >atendimento@sossolution.com.br</a
           >
         </h4>
         <div class="social-container">
@@ -661,20 +696,20 @@ SOLICITE UM ORÇAMENTO</a>
 
     <!-- Copyright -->
     <div class="copyright">
-  <div class="container px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-    
-    <ul class="mb-4 list-unstyled p-small">
-      <li class="mb-2 text-white">
-        <a href="privacy.html">POLÍTICA DE PRIVACIDADE</a>
-      </li>
-    </ul>
+      <div class="container px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        
+        <ul class="mb-4 list-unstyled p-small">
+          <li class="mb-2 text-white">
+            <a href="privacy.html">POLÍTICA DE PRIVACIDADE</a>
+          </li>
+        </ul>
 
-    <p class="pb-2 p-small text-white statement col-span-2 sm:col-span-2">
-      © 2025 CRIADO POR SOS SOLUTION TECH. TODOS OS DIREITOS RESERVADOS.
-    </p>
+        <p class="pb-2 p-small text-white statement col-span-2 sm:col-span-2">
+          © 2025 CRIADO POR SOS SOLUTION TECH. TODOS OS DIREITOS RESERVADOS.
+        </p>
 
-  </div>
-</div>
+      </div>
+    </div>
 
     <!-- end of copyright -->
     <!-- end of copyright -->
@@ -694,10 +729,142 @@ SOLICITE UM ORÇAMENTO</a>
     <script>
       AOS.init();
     </script>
+    
     <!-- <style>
   * {
     outline: 1px solid red;
   }
 </style> -->
+
+<script>
+  const canvas = document.querySelector('.neon-glow');
+  const ctx = canvas.getContext('2d');
+
+  let width = canvas.width = window.innerWidth;
+  let height = canvas.height = window.innerHeight;
+
+  let mouse = { x: width / 2, y: height / 2 };
+  let smoothMouse = { x: mouse.x, y: mouse.y };
+
+  const trail = [];
+  const maxTrailLength = 40;
+  const fadeDuration = 60;
+
+  window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  function lerp(start, end, t) {
+    return start + (end - start) * t;
+  }
+
+  
+
+  const neonBalls = Array.from({ length: 10 }).map(() => ({
+    x: Math.random() * width,
+    y: Math.random() * height,
+    radius: 60 + Math.random() * 30,
+    phase: Math.random() * Math.PI * 10,
+    speed: 0.005 + Math.random() * 0.005, // <--- mais lento agora
+    timer: 300 + Math.random() * 300,
+    fade: 0,
+    fadingOut: false,
+  }));
+
+  let time = 0;
+
+  function animate() {
+    
+ 
+
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+    ctx.fillRect(0, 0, width, height);
+
+    time += 0.008;
+
+    smoothMouse.x = lerp(smoothMouse.x, mouse.x, 0.05);
+    smoothMouse.y = lerp(smoothMouse.y, mouse.y, 0.05);
+
+    trail.push({ x: smoothMouse.x, y: smoothMouse.y });
+    if (trail.length > maxTrailLength) {
+      trail.shift();
+    }
+
+    const mousePulse = (Math.sin(time) + 1) / 2;
+    const mouseBaseRadius = 60;
+    const mouseRadius = mouseBaseRadius + mouseBaseRadius * mousePulse;
+    const mouseAlpha = 0.4 + 0.6 * mousePulse;
+
+    const mouseGlow = ctx.createRadialGradient(
+      smoothMouse.x, smoothMouse.y, 0,
+      smoothMouse.x, smoothMouse.y, mouseRadius * 1.5
+    );
+    mouseGlow.addColorStop(0, `rgba(0, 255, 255, ${mouseAlpha * 0.6})`);
+    mouseGlow.addColorStop(0.2, `rgba(0, 255, 255, ${mouseAlpha * 0.3})`);
+    mouseGlow.addColorStop(0.4, `rgba(0, 200, 255, ${mouseAlpha * 0.2})`);
+    mouseGlow.addColorStop(0.6, `rgba(0, 150, 255, ${mouseAlpha * 0.1})`);
+    mouseGlow.addColorStop(0.8, `rgba(0, 100, 255, ${mouseAlpha * 0.05})`);
+    mouseGlow.addColorStop(1, 'rgba(0, 100, 255, 0)');
+
+    ctx.fillStyle = mouseGlow;
+    ctx.beginPath();
+    ctx.arc(smoothMouse.x, smoothMouse.y, mouseRadius * 1.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    neonBalls.forEach(ball => {
+      ball.phase += ball.speed;
+      ball.timer--;
+
+      const pulse = (Math.sin(ball.phase) + 1) / 2;
+
+      if (!ball.fadingOut) {
+        ball.fade += 1 / fadeDuration;
+        if (ball.fade >= 1) {
+          ball.fade = 1;
+          if (ball.timer <= fadeDuration) {
+            ball.fadingOut = true;
+          }
+        }
+      } else {
+        ball.fade -= 1 / fadeDuration;
+        if (ball.fade <= 0) {
+          ball.x = Math.random() * width;
+          ball.y = Math.random() * height;
+          ball.timer = 300 + Math.random() * 300;
+          ball.phase = Math.random() * Math.PI * 2;
+          ball.fade = 0;
+          ball.fadingOut = false;
+        }
+      }
+
+      const currentRadius = ball.radius + ball.radius * pulse;
+      const alpha = (0.4 + 0.6 * pulse) * ball.fade;
+
+      const glow = ctx.createRadialGradient(ball.x, ball.y, 0, ball.x, ball.y, currentRadius * 1.5);
+      glow.addColorStop(0, `rgba(255, 0, 255, ${alpha * 0.6})`);
+      glow.addColorStop(0.2, `rgba(255, 0, 255, ${alpha * 0.3})`);
+      glow.addColorStop(0.4, `rgba(200, 0, 255, ${alpha * 0.2})`);
+      glow.addColorStop(0.6, `rgba(150, 0, 255, ${alpha * 0.1})`);
+      glow.addColorStop(0.8, `rgba(100, 0, 255, ${alpha * 0.05})`);
+      glow.addColorStop(1, 'rgba(100, 0, 255, 0)');
+
+      ctx.fillStyle = glow;
+      ctx.beginPath();
+      ctx.arc(ball.x, ball.y, currentRadius * 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
   </body>
 </html>

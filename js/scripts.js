@@ -25,6 +25,7 @@ window.addEventListener('scroll', toggleTituloCorAoScroll);
 window.addEventListener('load', toggleTituloCorAoScroll);
 
 
+
   function toggleTextNavScroll() {
     const titulos = document.querySelectorAll('.text-nav');
     if (!titulos.length) return;
